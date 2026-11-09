@@ -1,0 +1,40 @@
+{
+  "split": {
+    "rows": 1800,
+    "per_class": 450,
+    "seed": 42,
+    "train_rows": 8200
+  },
+  "best_checkpoint": {
+    "step": 1000,
+    "val_loss": 0.3464
+  },
+  "macro_f1": 0.5347,
+  "accuracy": 0.5483,
+  "per_class": {
+    "same_figure": {
+      "precision": 0.9945,
+      "recall": 0.4,
+      "f1": 0.5705
+    },
+    "same_paper": {
+      "precision": 0.4081,
+      "recall": 0.76,
+      "f1": 0.5311
+    },
+    "related_papers": {
+      "precision": 0.5392,
+      "recall": 0.26,
+      "f1": 0.3508
+    },
+    "unrelated_papers": {
+      "precision": 0.617,
+      "recall": 0.7733,
+      "f1": 0.6864
+    }
+  },
+  "error_notes": [
+    "256 of 270 missed same_figure pairs were predicted as same_paper.",
+    "related_papers errors concentrate in figure-figure pairs: recall 0.0867; 104 of 150 cases predicted as same_paper."
+  ]
+}

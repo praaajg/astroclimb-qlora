@@ -1,0 +1,73 @@
+# Reference configuration for the AstroCLIMB QLoRA system.
+# Values follow Section 3 and Appendix A of the paper (WASP 2026).
+
+model:
+  id: google/gemma-4-E4B-it
+  load_in_4bit: true
+  quant_type: nf4
+  double_quant: true
+  compute_dtype: bfloat16
+  attn_implementation: sdpa
+  image_size: 448
+  max_caption_chars: 2000
+
+lora:
+  r: 64
+  alpha: 128
+  dropout: 0.05
+  bias: none
+  task_type: CAUSAL_LM
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+
+training:
+  output_dir: outputs/astroclimb-gemma4-e4b-qlora
+  max_steps: 2560
+  learning_rate: 1.0e-4
+  scheduler: cosine
+  warmup_steps: 204
+  warmup_ratio: 0.05
+  per_device_train_batch_size: 2
+  per_device_eval_batch_size: 2
+  gradient_accumulation_steps: 8
+  max_seq_length: 1536
+  eval_steps: 200
+  save_steps: 200
+  logging_steps: 20
+  early_stopping_patience: 3
+  early_stopping_threshold: 0.001
+  bf16: true
+  gradient_checkpointing: true
+  seed: 42
+  mask_prompt_tokens: false
+  report_to: none
+
+inference:
+  max_new_tokens: 32
+  do_sample: false
+  batch_size: 1
+
+data:
+  train_csv: data/raw/train.csv
+  test_csv: data/raw/test.csv
+  label_col: label
+  id_col: id
+  object_a_col: object_a
+  object_b_col: object_b
+  type_a_col: type_a
+  type_b_col: type_b
+  val_per_class: 450
+  seed: 42
+
+evaluation:
+  labels:
+    - same_figure
+    - same_paper
+    - related_papers
+    - unrelated_papers

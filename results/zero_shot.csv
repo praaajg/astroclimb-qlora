@@ -1,0 +1,5 @@
+model,thinking,rows,macro_f1,accuracy
+Gemma-4-E4B,no,1800,0.4408,0.5206
+Qwen3-VL-8B-Thinking,yes,1800,0.1068,0.2461
+SmolVLM-500M,no,1800,0.1723,0.2511
+GLM-4.6V-Flash,no,610,0.102,0.2557

@@ -1,0 +1,7 @@
+run,mode,rows,same_figure,same_paper,related_papers,unrelated_papers
+Gemma-4-E4B,zero-shot,1800,0.776,0.4108,0.0172,0.5593
+Gemma-4-E4B,few-shot,1800,0.7228,0.2047,0.0505,0.5918
+SmolVLM-500M,zero-shot,1800,0.0128,0.0088,0.3333,0.3341
+Gemma-4-E4B,fine-tuned,1800,0.5705,0.5311,0.3508,0.6864
+GLM-4.1V-9B,few-shot,445,0.8653,0.2571,0.0,0.5575
+Qwen3-VL-4B,few-shot,397,0.4709,0.2381,0.0612,0.2286

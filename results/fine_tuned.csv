@@ -1,0 +1,3 @@
+model,adapter,val_loss,official_test_f1
+Gemma-4-E4B,LoRA-64,0.3464,0.64282
+SmolVLM-500M,LoRA-32,0.3029,0.23675

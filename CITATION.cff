@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the paper and this repository."
+title: "PSGS@2026: From Figures to Citation Graphs: QLoRA Based Multimodal Linking for AstroCLIMB"
+type: software
+authors:
+  - family-names: Ghimire
+    given-names: Prajwal
+    affiliation: "Kathmandu University"
+  - family-names: Saud
+    given-names: Shiv Ram
+    affiliation: "Kathmandu University"
+  - family-names: Mahato
+    given-names: Aashish
+    affiliation: "Kathmandu University"
+  - family-names: Dawadi
+    given-names: Sandeep
+    affiliation: "Kathmandu University"
+  - family-names: Saud
+    given-names: Ramesh
+  - family-names: Regmi
+    given-names: Sunil
+    affiliation: "Kathmandu University"
+  - family-names: Shakya
+    given-names: Manoj
+    affiliation: "Kathmandu University"
+repository-code: "https://github.com/praaajg/astroclimb-qlora"
+url: "https://github.com/praaajg/astroclimb-qlora"
+license: MIT
+version: 1.0.0
+date-released: "2026-11-09"
+keywords:
+  - astroclimb
+  - multimodal linking
+  - citation graphs
+  - QLoRA
+  - Gemma
+preferred-citation:
+  type: conference-paper
+  title: "PSGS@2026: From Figures to Citation Graphs: QLoRA Based Multimodal Linking for AstroCLIMB"
+  authors:
+    - family-names: Ghimire
+      given-names: Prajwal
+    - family-names: Saud
+      given-names: Shiv Ram
+    - family-names: Mahato
+      given-names: Aashish
+    - family-names: Dawadi
+      given-names: Sandeep
+    - family-names: Saud
+      given-names: Ramesh
+    - family-names: Regmi
+      given-names: Sunil
+    - family-names: Shakya
+      given-names: Manoj
+  booktitle: "Proceedings of the 4th Workshop on Artificial Intelligence for Scientific Publications (WASP 2026)"
+  year: 2026
+  month: 11
+  start: 192
+  end: 198
+  publisher:
+    name: "Association for Computational Linguistics"

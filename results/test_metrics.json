@@ -1,0 +1,36 @@
+{
+  "rows": 10000,
+  "macro_f1": 0.64282,
+  "predicted_class_counts": {
+    "same_figure": 684,
+    "same_paper": 3005,
+    "related_papers": 2058,
+    "unrelated_papers": 4253
+  },
+  "per_class": {
+    "same_figure": {
+      "precision": 0.9386,
+      "recall": 0.642,
+      "f1": 0.7625
+    },
+    "same_paper": {
+      "precision": 0.6453,
+      "recall": 0.6463,
+      "f1": 0.6458
+    },
+    "related_papers": {
+      "precision": 0.5573,
+      "recall": 0.3823,
+      "f1": 0.4535
+    },
+    "unrelated_papers": {
+      "precision": null,
+      "recall": null,
+      "f1": null
+    }
+  },
+  "error_notes": [
+    "333 of 358 missed same_figure pairs were predicted as same_paper.",
+    "Figure-figure pairs remain the hardest subset for related_papers (F1 0.3166)."
+  ]
+}

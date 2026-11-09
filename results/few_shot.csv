@@ -1,0 +1,4 @@
+model,thinking,demos,rows,macro_f1,accuracy
+Gemma-4-E4B,yes,4,1800,0.3925,0.505
+Qwen3-VL-4B,yes,4,397,0.25,0.33
+GLM-4.1V-9B,yes,4,445,0.42,0.524
