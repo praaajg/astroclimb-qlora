@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: If you use this code, please cite the paper below.
+title: "PSGS@2026: From Figures to Citation Graphs: QLoRA Based Multimodal Linking for AstroCLIMB"
+authors:
+  - family-names: Ghimire
+    given-names: Prajwal
+  - family-names: Saud
+    given-names: Shiv Ram
+  - family-names: Mahato
+    given-names: Aashish
+  - family-names: Dawadi
+    given-names: Sundeep
+  - family-names: Saud
+    given-names: Ramesh
+  - family-names: Regmi
+    given-names: Sunil
+  - family-names: Shakya
+    given-names: Manoj
+version: 1.0.0
+date-released: 2026-11-10
+license: MIT
+repository-code: https://github.com/praaajg/astroclimb-qlora
+url: https://aclanthology.org/2026.wasp-1.21/

@@ -1,0 +1,15 @@
+{
+  "split": "balanced_1800",
+  "rows": 1800,
+  "model": "google/gemma-4-E4B-it",
+  "mode": "zero-shot",
+  "macro_f1": 0.4408,
+  "accuracy": 0.5206,
+  "per_class_f1": {
+    "same_figure": 0.776,
+    "same_paper": 0.4108,
+    "related_papers": 0.0172,
+    "unrelated_papers": 0.5593
+  },
+  "source": "paper"
+}

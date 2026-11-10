@@ -1,0 +1,12 @@
+torch>=2.4
+transformers>=5.15.1
+peft>=0.20.0
+accelerate>=0.34
+bitsandbytes>=0.46.1
+datasets>=3.0
+huggingface_hub>=0.25
+pandas>=2.0
+pillow>=10.0
+scikit-learn>=1.4
+numpy>=1.26
+tqdm>=4.66
